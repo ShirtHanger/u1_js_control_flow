@@ -244,36 +244,7 @@ The default clause is technically optional but in most cases it is good practice
 
 ### Iteration
 
-#### [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/while) loops
 
-`while` is a loop statement that will run while a condition evaluates to truthy.
-**WARNING** if your `while` loop never evaluates to falsy you may be stuck in an infinite loop! Like this:
-
-![Loop](https://thumbs.gfycat.com/ScarceIllHapuka-size_restricted.gif)
-
-```javascript
-let n = 0
-while (n < 50) {
-  console.log(n)
-  n++
-}
-
-```
-
->note: remember that `n++` is the equivolent of `n = n + 1`, so basically it makes `n`'s value increase by 1 each time you loop through the code.
-
-You can also `break` to exit the loop before the condition is met.
-
-```javascript
-let n = 0
-while (n < 50) {
-  console.log(n)
-  if (n === 42) {
-    break
-  }
-  n++
-}
-```
 
 #### [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/for) loops
 
@@ -306,6 +277,38 @@ while(i < 10) {
 ```
 
 We can implement something similar to a `for` loop with a `while` loop.
+
+
+#### [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/while) loops
+
+`while` is a loop statement that will run while a condition evaluates to truthy.
+**WARNING** if your `while` loop never evaluates to falsy you may be stuck in an infinite loop! Like this:
+
+![Loop](https://thumbs.gfycat.com/ScarceIllHapuka-size_restricted.gif)
+
+```javascript
+let n = 0
+while (n < 50) {
+  console.log(n)
+  n++
+}
+
+```
+
+>note: remember that `n++` is the equivolent of `n = n + 1`, so basically it makes `n`'s value increase by 1 each time you loop through the code.
+
+You can also `break` to exit the loop before the condition is met.
+
+```javascript
+let n = 0
+while (n < 50) {
+  console.log(n)
+  if (n === 42) {
+    break
+  }
+  n++
+}
+```
 
 ### Looping through Arrays
 One of the most common ways that we'll use loops in real life is by looping through arrays.
