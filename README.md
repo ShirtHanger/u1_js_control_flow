@@ -86,8 +86,8 @@ When you're comparing variables to values, make sure you're using  `===` or `==`
 Let's see if you have enough money to buy a cat! Using the following terms, create an `if / else if / else` conditional statement:
 
 - If `yourMoney` is equal to `catPrice`, log the message "You have just enough to buy a cat!"
-- If `yourMoney` is more than `catPrice`, log the message "You can buy a cat and will have <X> dollars left over"
-- If `yourMoney` is less than `catPrice`, log the message "You cannot buy a cat.  You need <X> more dollars :("
+- If `yourMoney` is more than `catPrice`, log the message "You can buy a cat and will have ____ dollars left over"
+- If `yourMoney` is less than `catPrice`, log the message "You cannot buy a cat.  You need ____ more dollars :("
 
 Check your code with the following variables (Remember, you can use Node to run the file in your terminal: `node control-flow.js`)
 
