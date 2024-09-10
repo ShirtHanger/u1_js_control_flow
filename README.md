@@ -109,7 +109,6 @@ const yourMoney = 200
 const catPrice = 100
 ```
 
-If you get stuck, talk to your neighbor and see if you can work it out.
 
 ## Working with Multiple conditons
   
