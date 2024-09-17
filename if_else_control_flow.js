@@ -33,7 +33,7 @@ if (dayOfWeek === 'Tuesday') {
 
  /* A bit of practice */
 
- const yourMoney = 200
+const yourMoney = 200
 const catPrice = 100
 
 
