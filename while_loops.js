@@ -1,19 +1,19 @@
+/* While loops */
+
+// While loops repeat code until a condition is met.
+// If you write it wrong, you can get an infinite loop. BE CAREFUL
 
 
-// Addendum 
+let customers = 0
+while(customers <= 10) {
+  console.log(customers, "customers!")
+  // do more stuff
 
-// ===Normal While Loop===
+  customers += 1
+}
 
-const movies = ['Barbie', 'Arrival', 'Get Out', 'Coco']
+// You can put break in a loop, FYI
 
-movies.forEach(function(movie) {
-  console.log(movie)
-})
 
-// ===Simple While Loop===
 
-const array1 = ['a', 'b', 'c']
 
-for (element of array1) {
-  console.log(element)
-} 

@@ -20,7 +20,7 @@ if (age >= 18) {
 // We can do as many as we want!
 // else if is skipped alltogether if the above condition was met
 
-const dayOfWeek = 'Tuesday'
+let dayOfWeek = 'Tuesday'
 
 if (dayOfWeek === 'Tuesday') {
     console.log("Class is in session!")
@@ -31,7 +31,9 @@ if (dayOfWeek === 'Tuesday') {
 }
  // => "Class is in session!"
 
- /* A bit of practice */
+ /* Independent practice
+ Basically, if your cash is equal to cat's price, console log "You can buy a cat!
+ If mor or less, print the difference and say you can/can't */
 
 const yourMoney = 200
 const catPrice = 100
@@ -43,4 +45,84 @@ if (yourMoney === catPrice) {
     console.log(`You can buy a cat, you will have $${yourMoney - catPrice} left over`)
 } else {
     console.log(`You need $${catPrice - yourMoney} more dollars :(`)
+}
+
+
+// Multiple conditions
+
+age = 117
+
+// And (&&), both conditions must be met for block to run
+
+if (yearsAlivagee < 20 && age >= 13) {
+    console.log("You are a teenager")
+} else {
+    console.log("You're not a teen")
+}
+
+// or (||), one or the other condition must be met for the block to run
+
+if (age >= 20 || age < 13) {
+    console.log("You aren't a teenager")
+} else {
+    console.log("You are a teen")
+}
+
+dayOfWeek = 'tuesday'
+
+if (dayofWeek != 'saturday' || dayOfWeek != 'sunday') {
+    console.log("Its a weekday! Get to class!")
+} else {
+    
+}
+
+// Ternary Operators
+// (condition) ? ifTrue : ifFalse
+// if/else conditions written in a SINGLE line, not as strong, clean and readable
+// No else ifs can be used
+
+let userLoggedIn = true
+
+userLoggedIn ? console.log('Welcome!') : console.log('Please log in')
+
+// This is much simpler than this
+
+if (userLoggedIn = true) {
+    cconsole.log('Welcome!')
+  } else {
+    console.log('Please log in')
+  }
+
+
+
+
+/* Switch Statements */
+
+// Switch statements are conditions that work with pre-defined inputs that are expected.
+// Attack button, item button, flee button in RPGs for example
+// based on === equality: 
+// Same logic as if/else
+// Case -> action -> break
+
+let food = 'fish'
+
+// case is like "If" or "Else if"
+// default is like "Else"
+
+switch (food) {
+    
+    case 'chicken': // Case is what condition is being searched for, if met, below code runs
+        console.log('Ill have the Chicken Parmesean')
+        break // Break skips entire code block when reached
+    case 'steak':
+        console.log('The steak please, medium rare')
+        break
+    case 'fish':
+        console.log('I think Ill try the Salmon')
+        break
+    case 'vegan':
+        console.log('Ill have a salad')
+        break
+    default: // Works like else, catch all if no conditoons are met
+        console.log('Please enter a valid entreee')
 }
